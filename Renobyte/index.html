@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renobyte - Lixo Eletrônico São Carlos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/Index.css">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">home</a>
+        <a href="#sobre">sobre</a>
+        <a href="#tipos">tipos de lixo</a>
+        <a href="#passos">como descartar</a>
+        <a href="#pontos">pontos de coleta</a>
+        <a href="#noticias">notícias</a>
+        <a href="#quem-somos">quem somos</a>
+    </div>
+
+    <header>
+        <div class="logo reveal-left">reno<span>byte</span></div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#tipos">tipos de lixo</a></li>
+                <li><a href="#passos">como descartar</a></li>
+                <li><a href="#pontos">pontos de coleta</a></li>
+                <li><a href="#noticias">notícias</a></li>
+                <li><a href="#quem-somos">quem somos</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="mainTitle">Renobyte</h1>
+            <p class="tagline" id="typing"></p>
+        </div>
+        <div class="guarapuava-badge" id="badge">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z'/%3E%3C/svg%3E" alt="escudo">
+            <div class="text">
+                <small>prefeitura de</small>
+                GUARAPUAVA
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section-pad about-section">
+        <div class="about-text reveal reveal-left">
+            <p>O Brasil gera <strong id="tonCounter">0</strong> toneladas de lixo eletrônico por ano, e apenas <strong id="percentCounter">0</strong>% recebe o descarte adequado. Em São Carlos, a realidade não é diferente.</p>
+        </div>
+        <div class="about-image reveal reveal-right">
+            <img src="https://cdn-icons-png.flaticon.com/512/6407/6407187.png" alt="Mascote reciclagem">
+        </div>
+    </section>
+
+    <!-- Tipos de Lixo Eletrônico -->
+    <section id="tipos" class="section-pad">
+        <h2 class="section-title reveal reveal-up">Tipos de Lixo Eletrônico</h2>
+        <div class="tipos-grid">
+            <div class="tipo-card linha-branca reveal reveal-left">
+                <div class="tipo-icon">⬜</div>
+                <h3>Linha Branca</h3>
+                <p>Geladeiras, fogões, máquinas de lavar, micro-ondas. Grandes eletrodomésticos que exigem logística especial.</p>
+            </div>
+            <div class="tipo-card linha-verde reveal reveal-up">
+                <div class="tipo-icon">🟢</div>
+                <h3>Linha Verde</h3>
+                <p>Computadores, notebooks, celulares, tablets. Dispositivos de TI e telecomunicações cheios de metais pesados.</p>
+            </div>
+            <div class="tipo-card linha-marrom reveal reveal-up">
+                <div class="tipo-icon">🟤</div>
+                <h3>Linha Marrom</h3>
+                <p>TVs, rádios, DVD players, equipamentos de som. Contêm vidro, plástico e componentes tóxicos.</p>
+            </div>
+            <div class="tipo-card linha-azul reveal reveal-up">
+                <div class="tipo-icon">🔵</div>
+                <h3>Linha Azul</h3>
+                <p>Liquidificadores, torradeiras, ferros de passar. Pequenos eletrodomésticos que também precisam de descarte correto.</p>
+            </div>
+            <div class="tipo-card linha-vermelha reveal reveal-right">
+                <div class="tipo-icon">🔴</div>
+                <h3>Linha Vermelha</h3>
+                <p>Pilhas, baterias e carregadores. Resíduos perigosos que contaminam o solo e a água.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 passos -->
+    <section id="passos" class="section-pad">
+        <h2 class="section-title reveal reveal-up">5 Passos para o Descarte Consciente</h2>
+        <div class="steps-container">
+            <div class="step-card reveal reveal-up">
+                <div class="step-icon">🔋</div>
+                <h3>1. Separe</h3>
+                <p>Identifique pilhas, celulares, cabos e eletrônicos que não usa mais.</p>
+            </div>
+            <div class="step-card reveal reveal-up">
+                <div class="step-icon">📦</div>
+                <h3>2. Armazene</h3>
+                <p>Coloque em caixas ou sacolas identificadas, longe da umidade.</p>
+            </div>
+            <div class="step-card reveal reveal-up">
+                <div class="step-icon">🗺️</div>
+                <h3>3. Localize</h3>
+                <p>Encontre o ponto de coleta mais próximo de sua casa.</p>
+            </div>
+            <div class="step-card reveal reveal-up">
+                <div class="step-icon">🚚</div>
+                <h3>4. Entregue</h3>
+                <p>Leve os materiais ao ecoponto no horário de funcionamento.</p>
+            </div>
+            <div class="step-card reveal reveal-up">
+                <div class="step-icon">🌱</div>
+                <h3>5. Compartilhe</h3>
+                <p>Divulgue a ação e ajude a criar uma corrente do bem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pontos de coleta -->
+    <section id="pontos" class="section-pad">
+        <h2 class="section-title reveal reveal-up">Pontos de Coleta em São Carlos</h2>
+        <div class="pontos-grid">
+            <div class="ponto-card reveal reveal-left">
+                <h4>🌳 Ecoponto Monjolinho</h4>
+                <p>Recolhe eletrônicos, pilhas e lâmpadas.</p>
+                <p class="endereco">R. Francisco Gentil de Mello, s/n – Jardim Alvorada</p>
+            </div>
+            <div class="ponto-card reveal reveal-up">
+                <h4>🏛️ UFSCar – Papa-Pilhas</h4>
+                <p>Pontos no campus e na Praça XV. Aceita pilhas e pequenos eletrônicos.</p>
+                <p class="endereco">Rod. Washington Luís, km 235 – Campus UFSCar</p>
+            </div>
+            <div class="ponto-card reveal reveal-right">
+                <h4>♻️ Cooperativa Acácia</h4>
+                <p>Recebe equipamentos de informática e eletrodomésticos.</p>
+                <p class="endereco">R. Luiz Palamone, 150 – Parque Faber</p>
+            </div>
+            <div class="ponto-card reveal reveal-left">
+                <h4>🏬 Praça XV (Eventos)</h4>
+                <p>Coletas itinerantes todo primeiro sábado do mês.</p>
+                <p class="endereco">Praça XV de Novembro – Centro</p>
+            </div>
+            <div class="ponto-card reveal reveal-up">
+                <h4>💡 Descarte Verde</h4>
+                <p>Caixas coletoras em supermercados da cidade.</p>
+                <p class="endereco">Rede Savegnago, Pão de Açúcar etc.</p>
+            </div>
+            <div class="ponto-card reveal reveal-right">
+                <h4>🏭 USP São Carlos</h4>
+                <p>Postos no campus 1 e 2. Aberto ao público geral.</p>
+                <p class="endereco">Av. Trab. São-carlense, 400 – Parque Arnold Schimidt</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias -->
+    <section id="noticias" class="section-pad">
+        <h2 class="section-title reveal reveal-up">Notícias</h2>
+        <div class="news-container">
+            <div class="news-card reveal reveal-up">
+                <img src="./imgs/image 2.png" alt="Lixo eletrônico">
+                <div class="content">
+                    <p>Brasil produz, por ano, quase duas toneladas e meia de lixo eletrônico</p>
+                    <a href="https://noticias.cancaonova.com/brasil/brasil-produz-por-ano-quase-duas-toneladas-e-meia-de-lixo-eletronico/" target="_blank" class="btn">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="news-card reveal reveal-up">
+                <img src="./imgs/Rectangle 7.png" alt="Descarte">
+                <div class="content">
+                    <p>Saber como descartar lixo eletrônico ainda é grande problema no Brasil</p>
+                    <a href="https://www.metropoles.com/brasil/saber-como-descartar-lixo-eletronico-ainda-e-grande-problema-no-brasil" target="_blank" class="btn">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="news-card reveal reveal-up">
+                <img src="./imgs/image 3.png" alt="ONG">
+                <div class="content">
+                    <p>ONG transforma 5 toneladas de lixo eletrônico em doações e ajuda famílias no interior de SP</p>
+                    <a href="https://g1.globo.com/sp/presidente-prudente-e-regiao/noticia/2025/11/10/ong-transforma-5-toneladas-de-lixo-eletronico-em-doacoes-e-ajuda-familias-no-interior-de-sp.ghtml" target="_blank" class="btn">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="news-card reveal reveal-up">
+                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=500&auto=format&fit=crop&q=60" alt="Reciclagem Brasil">
+                <div class="content">
+                    <p>Reciclagem de eletrônicos no Brasil cresce 15% em 2025, mas ainda é insuficiente</p>
+                    <a href="https://www.bbc.com/portuguese/articles/ckg2k9k48z8o" target="_blank" class="btn">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem somos -->
+    <section id="quem-somos" class="section-pad">
+        <h2 class="section-title reveal reveal-up">Quem Somos</h2>
+        <p class="quemsomos-text reveal reveal-scale">Somos um grupo apaixonado por tecnologia e meio ambiente, unidos pela missão de conscientizar sobre o descarte correto do lixo eletrônico. Através de palestras, sites e ações em São Carlos, buscamos transformar hábitos e construir um futuro mais sustentável.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Renobyte. Projeto acadêmico / palestra.</p>
+    </footer>
+
+    <script src="./Scripts/Index.js" defer></script>
+</body>
+</html>
