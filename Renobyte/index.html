@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/Index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <canvas id="particleCanvas"></canvas>
@@ -20,10 +21,13 @@
         <a href="#home">home</a>
         <a href="#sobre">sobre</a>
         <a href="#tipos">tipos de lixo</a>
+        <a href="#impactos">impactos</a>
         <a href="#passos">como descartar</a>
         <a href="#pontos">pontos de coleta</a>
         <a href="#noticias">notícias</a>
+        <a href="#curiosidades">você sabia?</a>
         <a href="#quem-somos">quem somos</a>
+        <a href="#jogar">jogar</a>
     </div>
 
     <header>
@@ -33,10 +37,13 @@
                 <li><a href="#home">home</a></li>
                 <li><a href="#sobre">sobre</a></li>
                 <li><a href="#tipos">tipos de lixo</a></li>
+                <li><a href="#impactos">impactos</a></li>
                 <li><a href="#passos">como descartar</a></li>
                 <li><a href="#pontos">pontos de coleta</a></li>
                 <li><a href="#noticias">notícias</a></li>
+                <li><a href="#curiosidades">você sabia?</a></li>
                 <li><a href="#quem-somos">quem somos</a></li>
+                <li><a href="#jogar">jogar</a></li>
             </ul>
         </nav>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -52,13 +59,7 @@
             <h1 id="mainTitle">Renobyte</h1>
             <p class="tagline" id="typing"></p>
         </div>
-        <div class="guarapuava-badge" id="badge">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z'/%3E%3C/svg%3E" alt="escudo">
-            <div class="text">
-                <small>prefeitura de</small>
-                GUARAPUAVA
-            </div>
-        </div>
+       
     </section>
 
     <!-- Sobre -->
@@ -99,6 +100,33 @@
                 <div class="tipo-icon">🔴</div>
                 <h3>Linha Vermelha</h3>
                 <p>Pilhas, baterias e carregadores. Resíduos perigosos que contaminam o solo e a água.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impactos -->
+    <section id="impactos" class="section-pad">
+        <h2 class="section-title reveal reveal-up">Impactos do Lixo Eletrônico</h2>
+        <div class="impactos-grid">
+            <div class="impacto-card reveal reveal-left">
+                <span class="impacto-icon">🌍</span>
+                <h3>Contaminação do Solo</h3>
+                <p>Metais pesados como chumbo e cádmio infiltram no solo e podem atingir lençóis freáticos.</p>
+            </div>
+            <div class="impacto-card reveal reveal-up">
+                <span class="impacto-icon">💧</span>
+                <h3>Poluição da Água</h3>
+                <p>O descarte incorreto em rios e lagos libera substâncias tóxicas que matam a fauna aquática.</p>
+            </div>
+            <div class="impacto-card reveal reveal-up">
+                <span class="impacto-icon">🫁</span>
+                <h3>Danos à Saúde Humana</h3>
+                <p>Exposição a resíduos eletrônicos pode causar problemas respiratórios e neurológicos.</p>
+            </div>
+            <div class="impacto-card reveal reveal-right">
+                <span class="impacto-icon">♻️</span>
+                <h3>Benefícios da Reciclagem</h3>
+                <p>Reciclar um milhão de celulares pode recuperar até 15 kg de ouro e 150 kg de cobre.</p>
             </div>
         </div>
     </section>
@@ -207,14 +235,73 @@
         </div>
     </section>
 
+    <!-- Curiosidades -->
+    <section id="curiosidades" class="section-pad">
+        <h2 class="section-title reveal reveal-up">Você Sabia? 💡</h2>
+        <div class="curiosidades-container">
+            <div class="curiosidade-item reveal reveal-left">
+                <span class="curiosidade-num">01</span>
+                <p>Em 2024, o mundo gerou 62 milhões de toneladas de lixo eletrônico – peso equivalente a mais de 6 milhões de caminhões lotados.</p>
+            </div>
+            <div class="curiosidade-item reveal reveal-right">
+                <span class="curiosidade-num">02</span>
+                <p>Apenas 22% desse volume foi formalmente reciclado. O restante foi parar em aterros ou foi queimado ilegalmente.</p>
+            </div>
+            <div class="curiosidade-item reveal reveal-left">
+                <span class="curiosidade-num">03</span>
+                <p>Um celular comum contém até 60 elementos da tabela periódica, incluindo ouro, prata, cobre e terras raras.</p>
+            </div>
+            <div class="curiosidade-item reveal reveal-right">
+                <span class="curiosidade-num">04</span>
+                <p>O Brasil é o 5º maior gerador de lixo eletrônico do mundo, mas ainda carece de políticas públicas efetivas para o setor.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Quem somos -->
     <section id="quem-somos" class="section-pad">
         <h2 class="section-title reveal reveal-up">Quem Somos</h2>
         <p class="quemsomos-text reveal reveal-scale">Somos um grupo apaixonado por tecnologia e meio ambiente, unidos pela missão de conscientizar sobre o descarte correto do lixo eletrônico. Através de palestras, sites e ações em São Carlos, buscamos transformar hábitos e construir um futuro mais sustentável.</p>
     </section>
 
-    <footer>
-        <p>© 2026 Renobyte. Projeto acadêmico / palestra.</p>
+    <!-- NOVA SEÇÃO: Chamada para o Jogo -->
+    <section id="jogar" class="section-pad secao-jogo">
+        <div class="jogo-content reveal reveal-scale">
+            <span class="jogo-icone">🎮</span>
+            <h2>Hora de Praticar!</h2>
+            <p class="jogo-frase">Que tal testar seus conhecimentos sobre reciclagem de um jeito divertido?</p>
+            <a href="#" target="_blank" class="btn-jogar">Jogar Agora</a>
+            <p class="jogo-obs">(o jogo abrirá em uma nova aba)</p>
+        </div>
+    </section>
+
+    <!-- Footer Equipe -->
+    <footer class="footer-equipe">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>reno<span>byte</span></h3>
+                <p>Projeto acadêmico – Conscientização sobre Lixo Eletrônico</p>
+            </div>
+            <div class="footer-membros">
+                <h4>Nossa Equipe</h4>
+                <ul class="lista-membros">
+                    <li><strong>Daniel Dagnoni</strong> <span>Game Developer</span></li>
+                    <li><strong>Kauã Frenedozo</strong> <span>Game Developer</span></li>
+                    <li><strong>Dazi Mazoti</strong> <span>Game Developer</span></li>
+                    <li><strong>João Guilherme</strong> <span>Landing Developer</span></li>
+                    <li><strong>Victor Vaz</strong> <span>Landing Developer</span></li>
+                    <li><strong>Ana Beatriz da Silva</strong> <span>Landing Developer</span></li>
+                    <li><strong>Paulo Renato</strong> <span>Landing Developer</span></li>
+                </ul>
+            </div>
+            <div class="footer-msg">
+                <p>"Pequenas atitudes geram grandes mudanças. Recicle, repense, reviva."</p>
+                <span>— Equipe Renobyte, 2026</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Renobyte. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="./Scripts/Index.js" defer></script>
